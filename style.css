@@ -1,0 +1,19 @@
+.low-uv {
+    background-color: rgb(74, 190, 74);
+    padding: 7px;
+    border-radius: 10px;
+  }
+  
+  .moderate-uv {
+    background-color: rgb(255, 245, 99);
+    padding: 7px;
+    border-radius: 10px;
+  }
+  
+  .high-uv {
+    background-color: rgb(233, 74, 74);
+    padding: 7px;
+    border-radius: 10px;
+  }
+
+  /* UV INDEX COLOR SCHEME */

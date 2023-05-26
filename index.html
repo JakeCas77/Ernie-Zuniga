@@ -1,11 +1,121 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+      </head>
+      <!-- Optimization for mobile -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      <body>
+        <main class="container">
+          <header class="row">
+            <nav class="navbar navbar-dark bg-primary mb-1">
+              <div class="container">
+                <a href="#" class="navbar-brand">Weather Dashboard</a>
+            </nav>
+            </div>
+          </header>
+      
+          <main class="row">
+            <!-- Search Column -->
+            <section class="col search-section">
+              <div class="nav-wrapper">
+                <form id="search-form">
+                  <div class="input-field">
+                    <input type="text" class="search" id="search-input" placeholder="Enter your city...">
+                  </div>
+                  <button type="submit" id="search-button" class="btn btn-outline-success">Search</button>
+                </form>
+              </div>
+      
+              </row>
+              <!--  Cities List -->
+              <row class="search-history">
+                <div class="collection"></div>
+                <!-- Delete button -->
+                <button id="delete" class="btn btn-success">Delete History</button>
+              </row>
+            </section>
+      
+            <section class="col results-section">
+              <!-- Current Forecast Row -->
+              <div class="row" id="current-forecast">
+                <div class="col " id="current-forecast-col">
+                  <ul class="collection with-header">
+                    <li class="collection-header">
+                      <h3 id="name"></h3>
+                      <img id="current-icon" src="" alt="current weather icon">
+                      <p id="description">Description</p>
+                      <h5 id="current-date"></h5>
+                    </li>
+                    <li class="collection-item">Temperature: <span id="temp"></span> &deg F</li>
+                    <li class="collection-item">Humidity: <span id="hum"></span> %</li>
+                    <li class="collection-item">Wind Speed: <span id="wind"></span> mph</li>
+                    <li class="collection-item">UV Index: <span id="uvIndex"></span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 5 Day Row -->
+              <div class="row" id="5-day">
+                <div class="col ">
+                  <div class="card-panel">
+                    <p id="date-card-0" class="">calender</p>
+                    <img src="http://placehold.it/30X30" alt="day1" id="img-card-0">
+                    <p>Temp: <span id="temp-card-0"></span> &degF</p>
+                    <p>Humidity: <span id="hum-card-0"></span> %</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-panel">
+                    <p id="date-card-1" class="">calender</p>
+                    <img src="http://placehold.it/30X30" alt="day2" id="img-card-1">
+                    <p>Temp: <span id="temp-card-1"></span> &degF</p>
+                    <p>Humidity: <span id="hum-card-1"></span> %</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-panel">
+                    <p id="date-card-2" class="">calender</p>
+                    <img src="http://placehold.it/30X30" alt="day3" id="img-card-2">
+                    <p>Temp: <span id="temp-card-2"></span> &degF</p>
+                    <p>Humidity: <span id="hum-card-2"></span> %</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-panel">
+                    <p id="date-card-3" class="">calender</p>
+                    <img src="http://placehold.it/30X30" alt="day4" id="img-card-3">
+                    <p>Temp: <span id="temp-card-3"></span> &degF</p>
+                    <p>Humidity: <span id="hum-card-3"></span> %</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-panel">
+                    <p id="date-card-4" class="">calender</p>
+                    <img src="http://placehold.it/30X30" alt="day5" id="img-card-4">
+                    <p>Temp: <span id="temp-card-4"></span> &degF</p>
+                    <p>Humidity: <span id="hum-card-4"></span> %</p>
+                  </div>
+                </div>
+            </section>
+          </main>
+        </main>
+        <footer class="mt-5 p-3 text-center bg-light">
+          HP.Weather.js &copy;
+        </footer>
+      
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+        <!-- link to JavaScript -->
+        <script src="script.js"></script>
+      </body>
+      
+      </html>
